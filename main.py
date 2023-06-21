@@ -8,6 +8,8 @@ from examples.example1 import example1
 from examples.example2 import example2
 from examples.example3 import example3
 from examples.example4 import example4
+from examples.example5 import example5
+from examples.example6 import example6
 
 _ = load_dotenv(find_dotenv())  # read local .env file
 
@@ -18,6 +20,8 @@ try:
     example2(openai)
     example3(openai)
     example4(openai)
+    example5(openai)
+    example6(openai)
 except RateLimitError as e:
     msg = "Rate limit exceeded. Please try again later."
 except APIError as e:
